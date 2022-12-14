@@ -29,7 +29,21 @@ _Steps:_
 <img src="https://user-images.githubusercontent.com/70295997/207710878-74e52caf-722c-43ab-b232-7fbd45e581eb.png" width=900>
 
 
-After the table is created, I can view its structure. No need to predefine the Schema structure.
+After the table is created, I can view its structure. No need to predefine the Schema structure. It's an advantage of NoSQL.
+
 ![image](https://user-images.githubusercontent.com/70295997/207709809-4530a271-80f7-4234-9247-97950912a2a1.png)
 ![image](https://user-images.githubusercontent.com/70295997/207710286-f5e87adf-1069-4ca4-bd38-3ccb849f59c8.png)
+
+Now I have to create the API Gateway (GW).
+
+...
+
+To grant access to the outside world, I create a Public API.
+
+...
+
+In the Amazon API GW, a REST API refers to a collection of resources and methods that can be envoked through HTTPS endpoints.
+
+...
+
 
