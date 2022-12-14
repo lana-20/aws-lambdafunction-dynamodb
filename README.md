@@ -1,5 +1,9 @@
 # AWS Lambda Function + DynamoDB
 
+SDET/QE Perspective. Practical use case for Lambda. How to integrate λ with API GW.
+
+![image](https://user-images.githubusercontent.com/70295997/207719183-58f6cd6f-da34-4abe-97fe-f1c07e533013.png)
+
 __DynamoDB:__
 - very flexible NoSQL DB
 - key-value pair format of documentation
