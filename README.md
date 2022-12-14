@@ -22,4 +22,10 @@ _Steps:_
 
 <img src="https://user-images.githubusercontent.com/70295997/207708326-4ea30952-3bad-4a7e-9333-6d10ce0b215a.png" width=900>
 <img src="https://user-images.githubusercontent.com/70295997/207708225-a9fcebe3-11d8-4054-8d97-a4df66fad249.png" width=900>
+<img src="https://user-images.githubusercontent.com/70295997/207710878-74e52caf-722c-43ab-b232-7fbd45e581eb.png" width=900>
+
+
+After the table is created, I can view its structure. No need to predefine the Schema structure.
+![image](https://user-images.githubusercontent.com/70295997/207709809-4530a271-80f7-4234-9247-97950912a2a1.png)
+![image](https://user-images.githubusercontent.com/70295997/207710286-f5e87adf-1069-4ca4-bd38-3ccb849f59c8.png)
 
