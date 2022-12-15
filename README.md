@@ -116,7 +116,11 @@ Create the _lambda_admin_role_ and verify it displays under IAM > Roles.
 
 ![image](https://user-images.githubusercontent.com/70295997/207971197-ea0dbbf7-38b8-4ab1-aa47-de6fd3ed690d.png)
 
-Go back to Lambda > Functions > AddEmployee > Edit basic settings and select option 'Use an existing role'.
+Go back to _Lambda > Functions > AddEmployee > Edit basic settings_ and select option 'Use an existing role'.
+
+![image](https://user-images.githubusercontent.com/70295997/207974779-00114215-a23c-49c2-96c2-b845557b58b1.png)
+
+
 ...
 
 
