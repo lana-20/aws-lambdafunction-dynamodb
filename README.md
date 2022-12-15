@@ -94,7 +94,29 @@ Now, test it from the API GW. Pass the following load to the Request Body:
 
 ![image](https://user-images.githubusercontent.com/70295997/207949807-ae348286-ca79-4172-836e-3c7e87e04cda.png)
 
+I get the _AccessDeniedException_ error message, because I have no access to the Employee table.
 
+![image](https://user-images.githubusercontent.com/70295997/207962221-f909784a-af66-4f14-9e87-88dc42697433.png)
+
+I have to grant permission/access when creating the AddEmployee function. Currenly, I have no permissions. Go to Lambda Function > Configuration > Permissions and edit the Execution Role.
+
+![image](https://user-images.githubusercontent.com/70295997/207965657-ddaa958f-9c2d-4201-86bd-b98c072f2a18.png)
+
+Select option 'Create a new role from AWS policy templates' and proceed to the IAM Console to create a role.
+
+![image](https://user-images.githubusercontent.com/70295997/207966866-eb085f52-7a75-419c-92a2-5221f382f60d.png)
+
+![image](https://user-images.githubusercontent.com/70295997/207968042-d8ce80c3-acb1-4749-b1f8-761c76bad70f.png)
+
+Select the AdministratorAccess Policy, populate the Tags if applicable, and proceed to the Review.
+
+![image](https://user-images.githubusercontent.com/70295997/207970690-32be1106-4f17-4ba4-a686-3b6736ce1d9f.png)
+
+Create the _lambda_admin_role_ and verify it displays under IAM > Roles.
+
+![image](https://user-images.githubusercontent.com/70295997/207971197-ea0dbbf7-38b8-4ab1-aa47-de6fd3ed690d.png)
+
+Go back to Lambda > Functions > AddEmployee > Edit basic settings and select option 'Use an existing role'.
 ...
 
 
