@@ -54,7 +54,7 @@ Go back to the API GW and pass the name of this particular Lambda Function.
 ![Screenshot_20221214_071324](https://user-images.githubusercontent.com/70295997/207764131-60e6f80d-a8eb-418f-8bbb-72db1d79da67.png)
 ![image](https://user-images.githubusercontent.com/70295997/207765482-514fcc0b-0c3f-4d2b-886f-55ad3aa1e903.png)
 ![image](https://user-images.githubusercontent.com/70295997/207765841-ce4b7883-e696-4906-9602-ab8787ddccdd.png)
-![image](https://user-images.githubusercontent.com/70295997/207767267-62882c29-bd34-4230-9641-cce1830b93ff.png)
+![image](https://user-images.githubusercontent.com/70295997/207951005-8ad4fc60-cc7d-4082-ada4-77c976f1ee22.png)
 
 Currently, λ is not interacting with DynamoDB. I have to integrate λ and DynamoDB. Write code in such a way that I can make a connection to the database. I use [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html) (AWS SDK for Python) for integration with the λ function. Boto3 is a low-lelel DynamoDB client.
 
