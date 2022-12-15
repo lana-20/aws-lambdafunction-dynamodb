@@ -48,6 +48,9 @@ In the Amazon API GW, a REST API refers to a collection of resources and methods
 ![image](https://user-images.githubusercontent.com/70295997/207760878-8355597d-fe65-40f7-977e-4dae761f825b.png)
 ![image](https://user-images.githubusercontent.com/70295997/207761014-b6c27afd-aa02-4209-a5bf-7a68ee750d18.png)
 ![image](https://user-images.githubusercontent.com/70295997/207761760-c48d14b6-302c-442c-9edb-5fe805f35063.png)
+
+Go back to the API GW and pass the name of this particular Lambda Function.
+
 ![image](https://user-images.githubusercontent.com/70295997/207762274-f73e153d-e557-4663-bd83-d24424cf2682.png)
 
 
