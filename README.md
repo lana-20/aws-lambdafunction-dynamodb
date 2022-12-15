@@ -56,9 +56,35 @@ Go back to the API GW and pass the name of this particular Lambda Function.
 ![image](https://user-images.githubusercontent.com/70295997/207765841-ce4b7883-e696-4906-9602-ab8787ddccdd.png)
 ![image](https://user-images.githubusercontent.com/70295997/207767267-62882c29-bd34-4230-9641-cce1830b93ff.png)
 
-Right now, λ is not interacting with DynamoDB. I have to integrate λ and DynamoDB. Write code in such a way that I can make a connection to the databade.
+Currently, λ is not interacting with DynamoDB. I have to integrate λ and DynamoDB. Write code in such a way that I can make a connection to the database. I use [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html) (AWS SDK for Python) for integration with the λ function. Boto3 is a low-lelel DynamoDB client.
 
+I use the [_put_item()_](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.put_item) query method from the Boto3 service APIs documentation.
+![image](https://user-images.githubusercontent.com/70295997/207941167-3195bbe7-423b-432a-a560-0e0535ec41e0.png)
 
+Create a connection with DB by creating an object of DynamoDB. Follow the steps in the [Quick Start](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html#using-boto3) guide:
+
+![image](https://user-images.githubusercontent.com/70295997/207942365-519364ef-635c-44db-a1e2-0ba9150413e4.png)
+
+Proceed to the AddEmployee Lambda Function and write the following _lambda_function.py_ file.
+
+        import boto3
+
+        dynamodb = boto3.resource('dynamodb')
+        table = dynamodb.Table('Employee')
+
+        def lambda_handler(event, context):
+          table.put_item(Item=event)
+          return
+            {
+            "status code": 200,
+            "message": "Employee is created successfully"
+            }
+
+Click 'Deploy' to get the deployment package successfully saved. 
+
+Now, test it from the API GW.
+
+...
 
 
 
