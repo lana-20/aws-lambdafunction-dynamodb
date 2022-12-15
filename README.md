@@ -65,7 +65,7 @@ Create a connection with DB by creating an object of DynamoDB. Follow the steps 
 
 ![image](https://user-images.githubusercontent.com/70295997/207942365-519364ef-635c-44db-a1e2-0ba9150413e4.png)
 
-Proceed to the AddEmployee Lambda Function and write the following _lambda_function.py_ file.
+Proceed to the AddEmployee Lambda Function and edit the _lambda_function.py_ file as follows:
 
         import boto3
 
@@ -73,16 +73,27 @@ Proceed to the AddEmployee Lambda Function and write the following _lambda_funct
         table = dynamodb.Table('Employee')
 
         def lambda_handler(event, context):
-          table.put_item(Item=event)
-          return
-            {
-            "status code": 200,
-            "message": "Employee is created successfully"
-            }
+                table.put_item(Item=event)
+            return
+                {
+                "status code": 200,
+                "message": "Employee is created successfully"
+                }
 
 Click 'Deploy' to get the deployment package successfully saved. 
 
-Now, test it from the API GW.
+![image](https://user-images.githubusercontent.com/70295997/207948358-abd92db3-48ec-4132-bd6e-3eddb713436f.png)
+
+Now, test it from the API GW. Pass the following load to the Request Body:
+
+        {
+            "Employee_ID": 101,
+            "Name": "Abby",
+            "Age": 25
+        }
+
+![image](https://user-images.githubusercontent.com/70295997/207949807-ae348286-ca79-4172-836e-3c7e87e04cda.png)
+
 
 ...
 
