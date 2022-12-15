@@ -120,6 +120,12 @@ Go back to _Lambda > Functions > AddEmployee > Edit basic settings_ and select o
 
 ![image](https://user-images.githubusercontent.com/70295997/207974779-00114215-a23c-49c2-96c2-b845557b58b1.png)
 
+Go to the Employee table and verify the record is created.
+
+![image](https://user-images.githubusercontent.com/70295997/207990784-54ff0159-2260-482e-a44a-d1651609464c.png)
+
+
+
 
 ...
 
