@@ -28,11 +28,12 @@ _Steps:_
 <img src="https://user-images.githubusercontent.com/70295997/207708225-a9fcebe3-11d8-4054-8d97-a4df66fad249.png" width=900>
 <img src="https://user-images.githubusercontent.com/70295997/207710878-74e52caf-722c-43ab-b232-7fbd45e581eb.png" width=900>
 
-
 After the table is created, I can view its structure. No need to predefine the Schema structure. It's an advantage of NoSQL.
 
 ![image](https://user-images.githubusercontent.com/70295997/207709809-4530a271-80f7-4234-9247-97950912a2a1.png)
 ![image](https://user-images.githubusercontent.com/70295997/207710286-f5e87adf-1069-4ca4-bd38-3ccb849f59c8.png)
+![image](https://user-images.githubusercontent.com/70295997/207763950-23d206f7-3844-4feb-8b96-c194420b07f1.png)
+
 
 Now I have to create the API Gateway (GW). To grant access to the outside world, I create a Public API.
 
@@ -52,6 +53,7 @@ In the Amazon API GW, a REST API refers to a collection of resources and methods
 Go back to the API GW and pass the name of this particular Lambda Function.
 
 ![image](https://user-images.githubusercontent.com/70295997/207762274-f73e153d-e557-4663-bd83-d24424cf2682.png)
+![Screenshot_20221214_071324](https://user-images.githubusercontent.com/70295997/207764131-60e6f80d-a8eb-418f-8bbb-72db1d79da67.png)
 
 
 
