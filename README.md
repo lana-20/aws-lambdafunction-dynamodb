@@ -36,7 +36,9 @@ After the table is created, I can view its structure. No need to predefine the S
 
 Now I have to create the API Gateway (GW).
 
-...
+<img src="https://user-images.githubusercontent.com/70295997/207741200-5ca758df-65d1-495b-83ac-341bf8f03dec.png" width=900>
+<img src="https://user-images.githubusercontent.com/70295997/207741330-d3404790-fe2e-46da-9d0c-2152ce953755.png" width=900>
+
 
 To grant access to the outside world, I create a Public API.
 
