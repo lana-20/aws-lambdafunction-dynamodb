@@ -124,12 +124,23 @@ Go to the Employee table and verify the record is created.
 
 ![image](https://user-images.githubusercontent.com/70295997/207990784-54ff0159-2260-482e-a44a-d1651609464c.png)
 
+Add more data and verify another record is created in the table. Salary gets created only for the 2nd entry. It's the benefit of the NoSQL DB - no need to follow compliance and maintain the DB, all columns remain constant.
 
+![image](https://user-images.githubusercontent.com/70295997/207991821-c405121b-b119-49cc-b7c0-d48ed426ee66.png)
 
+Now, update a record.
 
-...
+![image](https://user-images.githubusercontent.com/70295997/207992753-ec87c507-f046-436e-adbd-4b815f58a53e.png)
 
+In this example, I have created API Gateway, Lambda Function (with Permission), and persisted the data into DynamoDB.
 
+I can deploy my API to a customer/client, use it for Postman, Web or Mobile apps -> make it available to the public.
+
+![image](https://user-images.githubusercontent.com/70295997/207995046-e3cb9179-505d-4c3c-847c-5f002f3649f3.png)
+
+Copy the method URL and test on any Client, i.e. Postman. Then, verify the record is created in the DynamoDB Employee table.
+
+![image](https://user-images.githubusercontent.com/70295997/207995633-7434e834-ce91-4312-a190-8d520f717b4e.png)
 
 
 
