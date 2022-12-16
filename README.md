@@ -142,6 +142,15 @@ Copy the method URL and test on any Client, i.e. Postman. Then, verify the recor
 
 ![image](https://user-images.githubusercontent.com/70295997/207995633-7434e834-ce91-4312-a190-8d520f717b4e.png)
 
+I can create a number of API GWs: 
+- Dev
+- QA
+- Staging
+- Production
+
+![image](https://user-images.githubusercontent.com/70295997/207997515-356ba47b-a58b-4c62-98cc-d90548dc3a61.png)
+
+This is the power of λ. I can integrate with DynamoDB and API GW. I do not grant any direct access to the λ functions, a Client hits the API GW. Client gives a request to API GW, which calls the serverless λ function (Python code), makes the connection to DynamoDB, processes the data in DB, gives the response back to the GW (eg, response code 200), and forwards the response to the Client (Postman/Web/Mobile).
 
 
 
