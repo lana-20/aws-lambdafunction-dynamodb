@@ -67,18 +67,18 @@ Create a connection with DB by creating an object of DynamoDB. Follow the steps 
 
 Proceed to the AddEmployee Lambda Function and edit the _lambda_function.py_ file as follows:
 
+        import json
         import boto3
 
         dynamodb = boto3.resource('dynamodb')
         table = dynamodb.Table('Employee')
 
         def lambda_handler(event, context):
-                table.put_item(Item=event)
-            return
-                {
-                "status code": 200,
-                "message": "Employee is created successfully"
-                }
+            table.put_item(Item=event)
+            return {
+                'statusCode': 200,
+                'message': 'Employee is created successfully'
+            }
 
 Click 'Deploy' to get the deployment package successfully saved. 
 
